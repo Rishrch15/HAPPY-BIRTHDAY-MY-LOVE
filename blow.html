@@ -20,7 +20,32 @@
             background-position: center;
             background-attachment: fixed;
 
-}
+    }
+              .top-button-container {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: row;
+        }
+        .top-button {
+            background-color: rgba(220, 212, 212, 0.8);
+            color: black;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.5em;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            margin: 0 10px; 
+        }
+        .top-button:hover {
+            background-color: black;
+            color: white;
+        }
       
 .cake {
   position: absolute;
@@ -198,7 +223,12 @@
     border-radius: 10px;
         }
     </style>
-<body> 
+<body>
+  <div class="top-button-container">
+    <a href="Video.html" class="top-button">Video</a>
+    <a href="messagepage.html" class="top-button">Photos</a>
+    <a href="index.html" class="top-button">Home</a>
+</div>
      <div class="message">
         <h1>HAPPY BIRTHDAY MY LOVE ♥</h1>
         <p>Please place a candle on top of the cake, then blow it out through your microphone.</p>

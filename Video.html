@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-DAY VIDEO</title>
+    <link rel="icon" href="bidday.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 200vh; 
+            background-color: black; 
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-y: scroll; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+        .background-video {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            z-index: -1;
+        }
+        .message-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .top-button-container {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000; 
+            display: flex;
+            flex-direction: row;
+        }
+        .top-button {
+            background-color: rgba(220, 212, 212, 0.8);
+            color: black;
+            border: none;
+            padding: 20px 30px; 
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 2em;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            margin: 0 10px; 
+        }
+        .top-button:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-button-container">
+        <a href="messagepage.html" class="top-button">Photos</a>
+        <a href="HBD.html" class="top-button">Home</a>
+    </div>
+
+    <video autoplay muted loop class="background-video">
+        <source src="VID.mp4" type="video/mp4">
+    </video>
+
+    <audio id="backgroundAudio" src="Spring Snow.mp3" autoplay loop></audio>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey, it's your day!</title>
+    <link rel="icon" href="bidday.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: scroll;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('iyan.jfif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.8;
+            z-index: -1;
+            background-attachment: fixed; 
+        }
+        .greet {
+            z-index: 1;
+            color: white;
+            font-size: 4em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            animation: slideUp 2s ease-out forwards;
+            text-shadow: 0 0 15px rgba(35, 27, 27, 0.8);
+            opacity: 0;
+            padding: 20px;
+        }
+
+        .greet h1, .greet h2, .greet h3 {
+            margin: 50px 0;
+        }
+
+        .greet a {
+            color: white;
+            font-size: 0.6em;
+            text-decoration: none;
+            margin-top: 150px;
+            display: inline-block;
+            border: 2.5px solid rgb(201, 251, 249);
+            padding: 15px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .greet a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .thumbnail {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: -80%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="greet">
+        <h1>HAPPY BIRTHDAY!</h1>
+        <h3>"IAN DERRICK CEA"</h3>
+        <a href="Video.html">10.23.2004</a>
+    </div>
+    <div class="thumbnail">
+        <p>@IRISH</p>
+    </div>
+
+
+</body>
+</html>
